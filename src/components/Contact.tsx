@@ -3,6 +3,7 @@
 import React from "react";
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
+import Link from "next/link";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -11,18 +12,41 @@ export function Contact() {
     <div className="relative">
       <Dock direction="middle">
         <DockIcon>
-          <Icons.twitter className="size-6" />
+          <Link
+            href="https://x.com/Hemanth_1321"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icons.twitter className="size-6" />
+          </Link>
         </DockIcon>
 
         <DockIcon>
-          <Icons.linkedin className="size-6" />
+          <Link
+            href="https://www.linkedin.com/in/hemanth-kumar-m-0496ba247"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icons.linkedin className="size-6" />
+          </Link>
         </DockIcon>
         <DockIcon>
-          <Icons.gitHub className="size-6" />
+          <Link
+            href="https://github.com/hemanth-1321"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icons.gitHub className="size-6" />
+          </Link>
         </DockIcon>
-
         <DockIcon>
-          <Icons.email className="size-6" />
+          <Link
+            href="mailto:hemanth02135@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icons.email className="size-6" />
+          </Link>
         </DockIcon>
       </Dock>
     </div>

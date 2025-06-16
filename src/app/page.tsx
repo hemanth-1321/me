@@ -2,7 +2,6 @@ import { Profile } from "@/components/profile";
 import Transition from "@/components/textTransition";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
-
 export default function Home() {
   return (
     <div className="h-screen w-full flex justify-center items-start py-10 px-4">
@@ -13,8 +12,10 @@ export default function Home() {
 
         <p className="text-muted-foreground text-xl text-left">
           Hey, I'm{" "}
-          <span className="font-bold text-white animate-pulse">Hemanth</span> —
-          a 20-year-old self-taught developer based in India. I’m passionate
+          <span className="font-bold dark:text-white animate-pulse">
+            Hemanth
+          </span>{" "}
+          — a 20-year-old self-taught developer based in India. I’m passionate
           about coding and love turning ideas into real, working projects.
           Always curious, always building.
         </p>
@@ -24,11 +25,17 @@ export default function Home() {
         </h1>
 
         <Skills />
-        <div className="text-center mb-4 flex justify-center items-center">
-          <p className="text-xl font-semibold">
-            Contact Me <span className="inline-block animate-bounce">↓</span>
-          </p>
-          <Contact />
+
+        <div className="flex flex-col items-center justify-between  space-x-10">
+          <div className="flex gap-4">
+            <p className="text-xl font-semibold  flex items-center gap-2 ">
+              <span>Get in touch</span>
+              <span className="inline-block animate-bounce">→</span>
+            </p>
+            <div className="mb-10">
+              <Contact />
+            </div>
+          </div>
         </div>
 
         {/* <blockquote className="mt-4 border-l-2 border-gray-600 pl-4 italic text-left text-gray-400">
