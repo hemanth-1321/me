@@ -14,7 +14,7 @@ export default function Transition() {
   }, []);
 
   return (
-    <span className="ml-2 text-white">
+    <span className="ml-2">
       <TextTransition inline springConfig={config.gentle}>
         {TEXTS[index % TEXTS.length]}
       </TextTransition>

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
 const logos: Record<string, string> = {
@@ -27,8 +30,8 @@ export const Skills = () => {
   ];
 
   return (
-    <section className="rounded-xl ">
-      <h2 className="scroll-m-20 border-t   pt-4 text-l text-wrap font-semibold tracking-tight first:mt-0 mb-5">
+    <section className="rounded-xl">
+      <h2 className="scroll-m-20 border-t pt-4 text-l text-wrap font-semibold tracking-tight first:mt-0 mb-5">
         Here are the tools I work with,
       </h2>
       <div className="flex flex-wrap gap-3">
@@ -38,10 +41,12 @@ export const Skills = () => {
             variant="secondary"
             className="flex items-center gap-2 bg-gray-200 text-gray-900 border border-gray-300 hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 px-3 py-2"
           >
-            <img
+            <Image
               src={logos[skill]}
               alt={`${skill} logo`}
-              className="w-4 h-4 object-contain dark:invert"
+              width={16}
+              height={16}
+              className="object-contain dark:invert"
             />
             <span>{skill}</span>
           </Badge>
