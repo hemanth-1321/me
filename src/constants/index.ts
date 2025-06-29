@@ -13,7 +13,7 @@ export const projects = [
       liveUrl: "https://mocky21.vercel.app",
     },
     description:
-      "Mocky is a modern mock interview platform built using Next.js, TypeScript, Prisma, and Shadcn UI components. It fetches job listings from RemoteOK, forwards job details to Gemini AI to generate tailored interview questions, and conducts real-time mock interviews via AvoAI agents in a conversational interface.",
+      "Mocky is a modern mock interview platform built using Next.js, TypeScript, Prisma, and Shadcn UI components. It fetches job listings from RemoteOK, forwards job details to Gemini AI to generate tailored interview questions, and conducts real-time mock interviews via VAPI agents in a conversational interface.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -21,6 +21,34 @@ export const projects = [
       "Shadcn UI",
       "Tailwind CSS",
       "Aceternity UI",
+    ],
+  },
+
+  {
+    name: "SSH",
+    slug: "SSH",
+    image: {
+      url: "/ssh.png",
+      width: 800,
+      height: 200,
+      alt: "image gen",
+    },
+    urls: {
+      githubUrl: "https://github.com/hemanth-1321/shh",
+      liveUrl: "https://mocky21.vercel.app",
+    },
+    description:
+      "SSH is a sleek, modern messaging platform built with Next.js, designed for users who want to share thoughts anonymously, send powerful messages, and distribute them creatively",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Node js",
+      "express js",
+      "framer motion",
+      "web sockets",
     ],
   },
 
