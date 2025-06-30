@@ -35,7 +35,7 @@ export const projects = [
     },
     urls: {
       githubUrl: "https://github.com/hemanth-1321/shh",
-      liveUrl: "https://mocky21.vercel.app",
+      liveUrl: "https://shh-zeta.vercel.app",
     },
     description:
       "SSH is a sleek, modern messaging platform built with Next.js, designed for users who want to share thoughts anonymously, send powerful messages, and distribute them creatively",
