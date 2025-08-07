@@ -10,7 +10,7 @@ export const projects = [
     },
     ongoing: true,
     urls: {
-      githubUrl: "git clone https://github.com/hemanth-1321/DailyDevs.git",
+      githubUrl: "https://github.com/hemanth-1321/DailyDevs.git",
       liveUrl: "https://logs-ashy.vercel.app/",
     },
     description:
