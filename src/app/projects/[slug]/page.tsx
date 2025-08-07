@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ArrowLeft, Github, ExternalLink, Sparkles } from "lucide-react";
 import { projects } from "@/constants";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "motion/react";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -60,27 +61,54 @@ const ProjectPage = () => {
         {project.description}
       </p>
 
-      <div className="flex gap-3 mb-6">
-        {project.urls?.githubUrl && (
-          <a
-            href={project.urls.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-md bg-muted hover:bg-muted/80 transition-colors"
-          >
-            <Github className="w-5 h-5" />
-          </a>
-        )}
-        {project.urls?.liveUrl && (
-          <a
-            href={project.urls.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-md bg-muted hover:bg-muted/80 transition-colors"
-          >
-            <ExternalLink className="w-5 h-5" />
-          </a>
-        )}
+      <div className="flex justify-between gap-3 mb-6">
+        <div className="flex gap-3">
+          {project.urls?.githubUrl && (
+            <a
+              href={project.urls.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-md bg-muted hover:bg-muted/80 transition-colors"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+          )}
+          {project.urls?.liveUrl && (
+            <a
+              href={project.urls.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-md bg-muted hover:bg-muted/80 transition-colors"
+            >
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          )}
+        </div>
+        <div>
+          {project.ongoing && (
+            <div className="flex items-center gap-2">
+              {/* Glowing dot */}
+              <div className="relative h-4 w-4">
+                <motion.div
+                  className="absolute inset-0 rounded-full bg-green-400 blur-md opacity-70"
+                  animate={{
+                    scale: [1, 1.8],
+                    opacity: [0.7, 0],
+                  }}
+                  transition={{
+                    duration: 1.2,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                  }}
+                />
+                <div className="relative h-4 w-4 rounded-full bg-green-500 shadow-md shadow-green-700" />
+              </div>
+
+              {/* Text */}
+              <span className="text-sm  font-medium">Ongoing</span>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-2">

@@ -1,5 +1,33 @@
 export const projects = [
   {
+    name: "DailyDevs",
+    slug: "dailydevs",
+    image: {
+      url: "/dailydevs.png",
+      width: 800,
+      height: 200,
+      alt: "DailyDevs - Developer Productivity & Logging Platform",
+    },
+    ongoing: true,
+    urls: {
+      githubUrl: "git clone https://github.com/hemanth-1321/DailyDevs.git",
+      liveUrl: "https://logs-ashy.vercel.app/",
+    },
+    description:
+      "DailyDevs is a developer productivity and logging platform where users can log their daily development activities, track their coding streaks, and maintain a history of their work. Built with a modern fullstack setup including GitHub OAuth and Redis caching for performance.",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Redis",
+      "Node js",
+      "Express",
+      "NextAuth.js",
+    ],
+  },
+  {
     name: "Mocky",
     slug: "mocky",
     image: {
@@ -9,7 +37,7 @@ export const projects = [
       alt: "Mocky - Mock Interview Platform with AI Integration",
     },
     urls: {
-      githubUrl: "https://github.com/hemanth-1321/Mock_Interviewer.git",
+      githubUrl: "https://github.com/hemanth-1321/mocky",
       liveUrl: "https://mocky21.vercel.app",
     },
     description:

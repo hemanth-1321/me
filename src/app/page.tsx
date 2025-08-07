@@ -27,6 +27,8 @@ export default function Home() {
           I build <Transition />
         </h1>
 
+        {/* <LikeButton /> */}
+
         <Skills />
 
         <div className="flex flex-col items-center justify-between  space-x-10">
@@ -47,9 +49,9 @@ export default function Home() {
           </h3>
           <Projects />
         </div>
-      </div>
 
-      {/* Full-width Projects Section */}
+        <div>{/* <ResumeShowcase /> */}</div>
+      </div>
     </div>
   );
 }
